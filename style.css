@@ -1,0 +1,254 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(225, 219, 219);
+}
+
+/* navigation bar: logo or image */
+#logo{
+    margin: 5px 5px;
+    padding: 8px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo #head{
+    font-weight: bold;
+    display: block;
+    color: black;
+    text-shadow: 2px 2px white;
+    font-size: 1.2rem;
+    padding: 3px 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.0rem;
+    text-shadow: 2px 2px black;
+    font:bold;
+    font-family: "Libre Baskerville", serif;
+}
+
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 0px 60px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: beige;
+    text-shadow: none;
+    text-decoration:underline black;
+}
+
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    padding: 5px  200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position:absolute;
+    top: 109px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.6;
+}
+
+#home h1{
+    color: whitesmoke;
+    text-shadow: 5px 5px black;
+    text-align: center;
+    font-family: "Jersey 25", sans-serif;
+}
+
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Jersey 25", sans-serif;   
+}
+
+/* services section */
+.services{
+    margin: 20px;
+    display: flex;
+}
+
+.services .box{
+    border: 2px solid darkcyan;
+    padding: 30px;
+    margin: 30px 8px;
+    border-radius: 30px;
+    background-color: bisque;
+    box-shadow: -4px -4px darkcyan;
+}
+
+.services .box img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.services .box p{
+    font-family: "Libre Baskerville", serif;
+}
+
+
+/* client-section */
+#client-section{
+    height: 300px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding: 50px;
+}
+
+#clients img{
+    height: 100px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 5px 20px;
+}
+
+/* contact-section */
+
+#contact{
+    position: relative;    
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../Contact.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 1.0rem;
+}
+
+#contact-box form{
+    width: 50%;
+}
+
+#contact-box label{
+    font-size: 1.0rem;
+    font-family: "Libre Baskerville", serif;
+}
+
+
+/* utility classes */
+.h-primary{
+    font-size: 4rem;
+    padding: 15px;
+    text-shadow: 3px 3px grey;
+    font-family: "Libre Baskerville", serif;
+}
+
+.h-secondary{
+    font-size: 1.6rem;
+    padding: 15px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.btn{
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+    margin: 17px;
+}
+
+.center{
+    text-align: center;
+}
